@@ -7,8 +7,7 @@ html {
   font-weight: 400;
   font-style: normal;
 }
-.admin_text h1 
-{
+.admin_text h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -37,18 +36,16 @@ html {
 .no_underline > a {
   text-decoration: none;
 }
-.my_btn_dark
-{
+.my_btn_dark {
   background-color: #252a34 !important;
-  border:2px solid #252a34 !important;
+  border: 2px solid #252a34 !important;
   font-family: "Roboto", sans-serif;
   color: #00adb5 !important;
   font-size: 16px !important;
 }
-.my_btn_color
-{
+.my_btn_color {
   background-color: #00adb5 !important;
-  border:2px solid #252a34 !important;
+  border: 2px solid #252a34 !important;
   color: #252a34 !important;
   font-family: "Roboto", sans-serif;
   font-size: 17px !important;
@@ -82,13 +79,11 @@ html {
 .admin_block_border {
   border-top: 1px solid #252a342e;
 }
-.add_item_sec
-{
+.add_item_sec {
   font-family: "Roboto", sans-serif !important;
   font-style: normal;
 }
-.header_top
-{
+.header_top {
   background-color: #000;
   color: #00adb5;
   font-family: "Roboto", sans-serif;
@@ -98,22 +93,20 @@ html {
   padding: 15px;
   font-family: "Roboto", sans-serif;
 }
-.logo
-{
+.logo {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-style: normal;
   text-transform: uppercase;
-  font-size:40px;
+  font-size: 40px;
 }
-.logo > a 
-{
+.logo > a {
   text-decoration: none;
   color: #000;
 }
-.menu_area
-{
+.menu_area {
   font-family: "Roboto", sans-serif;
+  background-color: #fff;
 }
 .menu_area_menu {
   padding: 12px;
@@ -122,26 +115,26 @@ html {
   display: inline-block;
   margin-left: 15px;
 }
-.menu_area_menu li a 
-{
+.menu_area_menu li a {
   text-decoration: none;
   color: #252a34;
   padding: 8px;
 }
-.menu_area_menu li a:hover
-{
+.menu_area_menu li a:hover {
   background-color: #00adb5;
   color: #fff;
 }
-.cap_center
-{
+.cap_center {
   top: 50%;
   left: 50%;
   transform: translateY(-50%);
   bottom: initial;
 }
-.signup_btn a 
-{
+.signup_btn a {
   text-decoration: none;
   color: #252a34;
+}
+.login_page
+{
+  background-color: #F9F6EE;
 }

@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    </div>
+
     <div class="container-fluid menu_area">
         <div class="container">
             <div class="row pt-3 pb-3">
