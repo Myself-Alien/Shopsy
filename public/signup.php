@@ -21,9 +21,6 @@
                     <input type="submit" name="submit" class="btn btn-primary no_radius my_btn_dark" value="Submit">
                 </form>
             </div>
-            <div class="col-md-4 offset-md-4 text-center mt-3">
-            <button type="button" class="my_btn_color signup_btn"><a href="signup.php">Sign Up</a></button>
-            </div>
         </div>
     </div>
 </body>

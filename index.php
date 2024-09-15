@@ -1,14 +1,14 @@
 <?php
-include('../includes/header.php');
+include('includes/header.php');
 ?>
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>Shopy || Online Shopping</title>
-    <link href="../_dist/css/styles.css" rel="stylesheet">
-    <link href="../_dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="../_dist/js/bootstrap.min.js"></script>
+    <link href="_dist/css/styles.css" rel="stylesheet">
+    <link href="_dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="_dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -22,14 +22,14 @@ include('../includes/header.php');
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="../_dist/images/slider1.jpg" class="d-block w-100 " alt="...">
+                            <img src="_dist/images/slider1.jpg" class="d-block w-100 " alt="...">
                             <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0">
                                 <h1 class="">First slide label</h1>
                                 <p>Some representative placeholder content for the first slide.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="../_dist/images/slider2.jpg" class="d-block w-100 " alt="...">
+                            <img src="_dist/images/slider2.jpg" class="d-block w-100 " alt="...">
                             <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0">
                             <h1>First slide label</h1>
                                 <p>Some representative placeholder content for the second slide.</p>
