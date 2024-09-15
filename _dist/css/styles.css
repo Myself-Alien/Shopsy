@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 body,
 html {
@@ -85,9 +86,56 @@ html {
   font-family: "Roboto", sans-serif !important;
   font-style: normal;
 }
-
+.header_top
+{
+  background-color: #000;
+  color: #00adb5;
+  font-family: "Roboto", sans-serif;
+}
 .copyright {
   background-color: #00adb5;
   padding: 15px;
   font-family: "Roboto", sans-serif;
+}
+.logo
+{
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size:40px;
+}
+.logo > a 
+{
+  text-decoration: none;
+  color: #000;
+}
+.menu_area
+{
+  font-family: "Roboto", sans-serif;
+}
+.menu_area_menu {
+  padding: 12px;
+}
+.menu_area_menu li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.menu_area_menu li a 
+{
+  text-decoration: none;
+  color: #252a34;
+  padding: 8px;
+}
+.menu_area_menu li a:hover
+{
+  background-color: #00adb5;
+  color: #fff;
+}
+.cap_center
+{
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
 }
