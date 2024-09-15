@@ -22,9 +22,9 @@ Welcome to **Shopy**, a dynamic and user-friendly shopping platform designed to 
 ## Installation
 
 1. Clone the repository:
-  [ ```bash
-   (https://github.com/Myself-Alien/Shopsy.git)
-   ```]
+```bash
+   https://github.com/Myself-Alien/Shopsy.git
+   ```
 2. Navigate to the project directory:
    ```bash
    cd shopy
