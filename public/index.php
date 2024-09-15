@@ -48,6 +48,11 @@ include('../includes/header.php');
             </div>
         </div>
     </div>
+    <div class="container-fluid">
+        <div class="row">
+            <
+        </div>
+    </div>
     <script>
         const myCarouselElement = document.querySelector('#carouselExampleCaptions')
 
