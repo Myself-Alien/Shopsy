@@ -15,7 +15,8 @@ if (isset($_POST['submit'])) {
 
         // Compare plain text password
         if ($pass === $user['pass']) { // 'password' should be replaced with the actual column name in your database
-            echo "Login successful!";
+            session_start();
+            $_SESSION['email'] = $email; // Correctly assign the session variable
             header("Location: index.php");
         } else {
             echo "Invalid password.";
@@ -27,4 +28,3 @@ if (isset($_POST['submit'])) {
 
 // Close the connection
 mysqli_close($conn);
-?>

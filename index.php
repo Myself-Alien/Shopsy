@@ -1,14 +1,16 @@
 <?php
-session_start();
+session_start(); // Start the session
 
-if(isset($_SESSION['email']))
-{
-    echo "Welcome";
+// Check if the user is logged in by checking if the session variable is set
+if (isset($_SESSION['email'])) {
+    // User is logged in, you can use the email value
+    $email = $_SESSION['email'];
+    //echo "Welcome, " . $email; // Display the email safely
+} else {
+    echo "Login and Continue Shopping";
 }
-else 
-{
-    //header("Location: public/login.php");
-}
+
+include('config/database.php');
 include('header.php');
 ?>
 <!DOCTYPE html>
@@ -60,15 +62,15 @@ include('header.php');
     </div>
     <div class="container-fluid">
         <div class="row">
-            <
-                </div>
+            
         </div>
-        <script>
-            const myCarouselElement = document.querySelector('#carouselExampleCaptions')
+    </div>
+    <script>
+        const myCarouselElement = document.querySelector('#carouselExampleCaptions')
 
-            const carousel = new bootstrap.Carousel(myCarouselElement, {
-                interval: 4000,
-                touch: false
-            })
-        </script>
+        const carousel = new bootstrap.Carousel(myCarouselElement, {
+            interval: 4000,
+            touch: false
+        })
+    </script>
 </body>

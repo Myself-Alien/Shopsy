@@ -12,7 +12,13 @@
     <div class="container-fluid header_top">
         <div class="container">
             <div class="d-flex">
-                <div class="p-2 flex-grow-1">Call - 1800 254 1144</div>
+                <?php
+                if (isset($_SESSION['email'])) {
+                    // User is logged in, you can use the email value
+                    $email = $_SESSION['email'];
+                    echo  "<div class='p-2 flex-grow-1'>" . ('Welcome, '  . $email) . "</div>";
+                }
+                ?>
                 <div class="p-2">Privacy</div>
                 <div class="p-2">Media</div>
                 <div class="p-2">Media</div>
@@ -33,6 +39,7 @@
                         <li><a href="login.php">Login/Signup</a></li>
                         <li><a href="">My Account</a></li>
                         <li><a href="">Cart</a></li>
+                        <li><a href=""><a href="logout.php">Logout</a></li>
                     </ul>
                 </div>
             </div>
