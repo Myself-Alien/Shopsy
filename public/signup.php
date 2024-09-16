@@ -12,8 +12,8 @@
     <div class="container-fluid wrapp">
         <div class="container pt-5">
             <div class="col-md-6 offset-md-3 admin_box">
-                <h2 class="text-center">Login</h2>
-                <form action="" method="post">
+                <h2 class="text-center">Sign Up</h2>
+                <form action="signup_action.php" method="post">
                     <div class="row mb-3">
                         <div class="col">
                             <input type="text" name="fname" class="form-control no_radius" placeholder="First Name" required>
@@ -30,19 +30,19 @@
                     </div>
                     Address
                     <div class="input-group mb-3">
-                        <input type="text" name="street " class="form-control no_radius" placeholder="Street Address">
+                        <input type="text" name="street" class="form-control no_radius" placeholder="Street Address">
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" name="city " class="form-control no_radius" placeholder="City">
+                        <input type="text" name="city" class="form-control no_radius" placeholder="City">
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" name="state " class="form-control no_radius" placeholder="State">
+                        <input type="text" name="state" class="form-control no_radius" placeholder="State">
                     </div>
                     <div class="input-group mb-3">
-                        <input type="number" name="zip " class="form-control no_radius" placeholder="Zip">
+                        <input type="text" name="country" class="form-control no_radius" placeholder="Country">
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" name="country " class="form-control no_radius" placeholder="Country">
+                        <input type="number" name="zip" class="form-control no_radius" placeholder="Zip">
                     </div>
                     <input type="submit" name="submit" class="btn btn-primary no_radius my_btn_dark" value="Submit">
                 </form>
