@@ -23,26 +23,26 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="email" name="email" class="form-control no_radius" placeholder="Email*">
+                        <input type="email" name="email" class="form-control no_radius" placeholder="Email*" required>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" name="pass" class="form-control no_radius" placeholder="Password*">
+                        <input type="password" name="pass" class="form-control no_radius" placeholder="Password*" required>
                     </div>
                     Address
                     <div class="input-group mb-3">
-                        <input type="text" name="street" class="form-control no_radius" placeholder="Street Address">
+                        <input type="text" name="street" class="form-control no_radius" placeholder="Street Address" required>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" name="city" class="form-control no_radius" placeholder="City">
+                        <input type="text" name="city" class="form-control no_radius" placeholder="City" required>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" name="state" class="form-control no_radius" placeholder="State">
+                        <input type="text" name="state" class="form-control no_radius" placeholder="State" required>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" name="country" class="form-control no_radius" placeholder="Country">
+                        <input type="text" name="country" class="form-control no_radius" placeholder="Country" required>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="number" name="zip" class="form-control no_radius" placeholder="Zip">
+                        <input type="number" name="zip" class="form-control no_radius" placeholder="Zip" required>
                     </div>
                     <input type="submit" name="submit" class="btn btn-primary no_radius my_btn_dark" value="Submit">
                 </form>
