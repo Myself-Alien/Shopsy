@@ -1,10 +1,15 @@
 <?php
 session_start();
-$id = session_id();
-echo "Session Id: " . $id;
-$email = $_SESSION['email'];
-echo "Email: " . $email;
-include('includes/header.php');
+
+if(isset($_SESSION['email']))
+{
+    echo "Welcome";
+}
+else 
+{
+    //header("Location: public/login.php");
+}
+include('header.php');
 ?>
 <!DOCTYPE html>
 <html>

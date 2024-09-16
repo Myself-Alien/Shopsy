@@ -1,5 +1,5 @@
 <?php
-include('../config/database.php');
+include('config/database.php');
 
 if (isset($_POST['submit'])) {
     $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -16,10 +16,7 @@ if (isset($_POST['submit'])) {
         // Compare plain text password
         if ($pass === $user['pass']) { // 'password' should be replaced with the actual column name in your database
             echo "Login successful!";
-            session_start();
-            $_SESSION['email'];
-            header("Location: ../index.php");
-            exit();
+            header("Location: index.php");
         } else {
             echo "Invalid password.";
         }

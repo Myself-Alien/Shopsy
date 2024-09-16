@@ -3,9 +3,9 @@
 
 <head>
     <title>Shopy || Login</title>
-    <link href="../_dist/css/styles.css" rel="stylesheet">
-    <link href="../_dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="../_dist/js/bootstrap.min.js"></script>
+    <link href="_dist/css/styles.css" rel="stylesheet">
+    <link href="_dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="_dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>

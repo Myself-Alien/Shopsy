@@ -3,9 +3,9 @@
 
 <head>
     <title>Shopy || Online Shopping</title>
-    <link href="../_dist/css/styles.css" rel="stylesheet">
-    <link href="../_dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="../_dist/js/bootstrap.min.js"></script>
+    <link href="_dist/css/styles.css" rel="stylesheet">
+    <link href="_dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="_dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="col-md-8">
                     <ul class="menu_area_menu mb-0 float-end">
-                        <li><a href="public/login.php">Login/Signup</a></li>
+                        <li><a href="login.php">Login/Signup</a></li>
                         <li><a href="">My Account</a></li>
                         <li><a href="">Cart</a></li>
                     </ul>
