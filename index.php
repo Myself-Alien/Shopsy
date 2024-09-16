@@ -1,13 +1,15 @@
 <?php
 session_start(); // Start the session
-
-// Check if the user is logged in by checking if the session variable is set
 if (isset($_SESSION['email'])) {
-    // User is logged in, you can use the email value
     $email = $_SESSION['email'];
-    //echo "Welcome, " . $email; // Display the email safely
 } else {
-    echo "Login and Continue Shopping";
+    echo "<div class='container-fluid log_top_clr'>";
+    echo "<div class='container'>";
+    echo "<div class='col-md-12 log_top_msg'>";
+    echo "<blink class='blink'>Login and Continue Shopping</blink>";
+    echo "</div>";
+    echo "</div>";
+    echo "</div>";
 }
 
 include('config/database.php');
@@ -62,7 +64,7 @@ include('header.php');
     </div>
     <div class="container-fluid">
         <div class="row">
-            
+
         </div>
     </div>
     <script>

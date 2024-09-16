@@ -134,7 +134,25 @@ html {
   text-decoration: none;
   color: #252a34;
 }
-.login_page
+.login_page {
+  background-color: #f9f6ee;
+}
+.log_top_msg {
+  margin-left: 6px;
+  padding: 2px;
+  text-align: center;
+  font-size: 16px;
+}
+.log_top_clr {
+  background-color: #ff6347;
+  color: #fff;
+}
+.blink
 {
-  background-color: #F9F6EE;
+  animation: blinker 1.9s linear infinite;
+}
+@keyframes blinker {
+  50% {
+      opacity: 0;
+  }
 }
