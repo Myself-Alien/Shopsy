@@ -31,7 +31,7 @@ include('includes/header.php');
                         <div class="carousel-item">
                             <img src="_dist/images/slider2.jpg" class="d-block w-100 " alt="...">
                             <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0">
-                            <h1>First slide label</h1>
+                                <h1>First slide label</h1>
                                 <p>Some representative placeholder content for the second slide.</p>
                             </div>
                         </div>
@@ -51,14 +51,14 @@ include('includes/header.php');
     <div class="container-fluid">
         <div class="row">
             <
+                </div>
         </div>
-    </div>
-    <script>
-        const myCarouselElement = document.querySelector('#carouselExampleCaptions')
+        <script>
+            const myCarouselElement = document.querySelector('#carouselExampleCaptions')
 
-        const carousel = new bootstrap.Carousel(myCarouselElement, {
-            interval: 4000,
-            touch: false
-        })
-    </script>
+            const carousel = new bootstrap.Carousel(myCarouselElement, {
+                interval: 4000,
+                touch: false
+            })
+        </script>
 </body>
