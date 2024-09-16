@@ -2,7 +2,8 @@
 session_start();
 $id = session_id();
 echo "Session Id: " . $id;
-
+$email = $_SESSION['email'];
+echo "Email: " . $email;
 include('includes/header.php');
 ?>
 <!DOCTYPE html>
