@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
         if ($pass === $user['pass']) { // 'password' should be replaced with the actual column name in your database
             echo "Login successful!";
             session_start();
-            $_SESSION['email'] = $email;
+            $_SESSION['email'];
             header("Location: ../index.php");
             exit();
         } else {
