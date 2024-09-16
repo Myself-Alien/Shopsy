@@ -1,4 +1,8 @@
 <?php
+session_start();
+$id = session_id();
+echo "Session Id: " . $id;
+
 include('includes/header.php');
 ?>
 <!DOCTYPE html>

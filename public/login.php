@@ -14,7 +14,7 @@ include('../includes/header.php');
         <div class="container pt-5">
             <div class="col-md-4 offset-md-4 admin_box">
                 <h2 class="text-center">Login</h2>
-                <form action="" method="post">
+                <form action="login_action.php" method="post">
                     <div class="input-group mb-3">
                         <input type="text" name="email" class="form-control no_radius" placeholder="Enter Email" required>
                     </div>

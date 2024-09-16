@@ -6,6 +6,7 @@ if (isset($_POST['submit'])) {
     $lname = $_POST['lname'];
     $email = $_POST['email'];
     $pass = $_POST['pass'];
+    //$pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
     $street = $_POST['street'];
     $city = $_POST['city'];
     $state = $_POST['state'];
