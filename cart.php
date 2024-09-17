@@ -19,7 +19,7 @@ if (isset($_GET['id'])) {
         $_SESSION['cart'][$product_id] = $quantity;
     }
 
-    echo "Product added to cart!";
+    echo $product_id ."Product added to cart!";
 } else {
     echo "Product ID is missing!";
 }

@@ -10,8 +10,8 @@
 
 <body>
     <div class="container-fluid wrapp">
-        <div class="container pt-5">
-            <div class="col-md-6 offset-md-3 admin_box">
+        <div class="container pt-2 pb-2">
+            <div class="col-md-4 offset-md-4 admin_box">
                 <h2 class="text-center">Sign Up</h2>
                 <form action="signup_action.php" method="post">
                     <div class="row mb-3">
@@ -43,6 +43,9 @@
                     </div>
                     <div class="input-group mb-3">
                         <input type="number" name="zip" class="form-control no_radius" placeholder="Zip" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="file" id="formFile">
                     </div>
                     <input type="submit" name="submit" class="btn btn-primary no_radius my_btn_dark" value="Submit">
                 </form>
