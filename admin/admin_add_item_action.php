@@ -8,31 +8,28 @@ if (isset($_POST['submit'])) {
     $item_category = $_POST['item_category'];
 
     $target_dir = "../_dist/uploads/";
-    $target_file = $target_dir . basename($_FILES["item_image"]["name"]);
-    $uploadOk = 1;
-    $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+    $filename = basename($_FILES["item_image"]["name"]);
+$target_file = $target_dir . $filename;
 
-    if (move_uploaded_file($_FILES["item_image"]["tmp_name"], $target_file)) {
+if (move_uploaded_file($_FILES["item_image"]["tmp_name"], $target_file)) {
+    chmod($target_file, 0755);
 
-        $stmt = $conn->prepare("INSERT INTO `items`(`item_name`, `item_dec`, `item_price`, `item_cate`, `item_img`) VALUES (?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO `items`(`item_name`, `item_dec`, `item_price`, `item_cate`, `item_img`) VALUES (?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssss", $item_name, $item_dec, $item_price, $item_category, $filename); // Save just the filename
 
-        $stmt->bind_param("sssss", $item_name, $item_dec, $item_price, $item_category, $target_file);
-
-        if ($stmt->execute()) {
-            echo "<script>
-            alert('Item Add Successfully!');
-            window.location.href='admin_add_item.php';
-            </script>";
-        } else {
-            echo "Error: " . $stmt->error;
-        }
-
-        $stmt->close();
-    } 
-    else {
-        echo "Sorry, there was an error uploading.";
+    if ($stmt->execute()) {
+        echo "<script>
+        alert('Item Added Successfully!');
+        window.location.href='admin_add_item.php';
+        </script>";
+    } else {
+        echo "Error: " . $stmt->error;
     }
+
+    $stmt->close();
+} else {
+    echo "Sorry, there was an error uploading your file.";
+}
 }
 
 $conn->close();
-?>

@@ -51,7 +51,7 @@ if (!$conn) {
                         echo "<div class='row mt-3'>";
                         echo "<div class='card mb-3'>";
                         echo "<div class='row g-0'>";
-                        echo "<div class='col-md-2'>";
+                        echo "<div class='col-md-1'>";
                         echo "<div class='card-body'>";
                         echo htmlspecialchars($row['id'], ENT_QUOTES, 'UTF-8');
                         echo "</div>";
@@ -59,7 +59,7 @@ if (!$conn) {
 
                         echo "<div class='col-md-2'>";
                         echo "<div class='card-body'>";
-                        echo "<img src='../_dist/uploads/" . htmlspecialchars($row['item_img']) . "' alt='" . htmlspecialchars($row['item_name'], ENT_QUOTES, 'UTF-8') . "'>";
+                        echo "<img src='../_dist/uploads/" . htmlspecialchars($row['item_img'], ENT_QUOTES, 'UTF-8') . "' alt='" . htmlspecialchars($row['item_name'], ENT_QUOTES, 'UTF-8') . "' style='width: 100px; height: auto;'>";
                         echo "</div>";
                         echo "</div>";
 
@@ -68,12 +68,12 @@ if (!$conn) {
                         echo htmlspecialchars($row['item_name'], ENT_QUOTES, 'UTF-8');
                         echo "</div>";
                         echo "</div>";
-                        echo "<div class='col-md-2'>";
+                        echo "<div class='col-md-4'>";
                         echo "<div class='card-body'>";
                         echo htmlspecialchars($row['item_dec'], ENT_QUOTES, 'UTF-8');
                         echo "</div>";
                         echo "</div>";
-                        echo "<div class='col-md-2'>";
+                        echo "<div class='col-md-1'>";
                         echo "<div class='card-body'>";
                         echo htmlspecialchars($row['item_price'], ENT_QUOTES, 'UTF-8');
                         echo "</div>";
