@@ -81,7 +81,7 @@ include('header.php');
                     echo "<div class='card-body'>";
                     echo "<h5 class='card-title'>" . htmlspecialchars($row['item_name'], ENT_QUOTES, 'UTF-8') . "</h5>";
                     echo "<p class='card-text Item_price'>" ."<span>"."₹"."</span>". htmlspecialchars($row['item_price'], ENT_QUOTES, 'UTF-8') . "</p>";
-                    echo "<a href='#' class='btn btn-primary float-start my_btn_color no_radius w-100 cart_btn'>Add to Cart</a>";
+                    echo "<a href='#' class='btn btn-primary float-start no_radius w-100 cart_btn'><i class='bi bi-cart4'></i> Add to Cart</a>";
                     //echo "<a href='#' class='btn btn-primary float-end'>Buy Now</a>";
                     echo "</div>";
                     echo "</div>";
