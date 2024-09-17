@@ -36,7 +36,7 @@
                 </div>
                 <div class="col-md-8">
                     <ul class="menu_area_menu mb-0 float-end">
-                        <li><a href="">Cart</a></li>
+                        <li><a href="cart.php">Cart</a></li>
                         <li><a href="">My Account</a></li>
                         <li><a href="login.php">Login</a></li>
                         <li><a href="logout.php">Logout</a></li>
