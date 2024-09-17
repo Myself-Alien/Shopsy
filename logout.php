@@ -1,6 +1,5 @@
 <?php 
 session_start(); 
-
 session_unset(); 
 
 echo "Redirect Please Wait";

@@ -1,19 +1,18 @@
 <?php
-session_start(); // Start the session
+session_start(); 
 
 if (isset($_SESSION['email'])) {
     $email = $_SESSION['email'];
-    
+
 } else {
     echo "<div class='container-fluid log_top_clr'>";
     echo "<div class='container'>";
     echo "<div class='col-md-12 log_top_msg'>";
-    echo "<span class='blink'>Login and Continue Shopping</span>"; // Changed <blink> to <span> for CSS control
+    echo "<span class='blink'>Login and Continue Shopping</span>"; 
     echo "</div>";
     echo "</div>";
     echo "</div>";
 }
-
 include('config/database.php');
 include('header.php');
 ?>
@@ -45,7 +44,7 @@ include('header.php');
                         <div class="carousel-item">
                             <img src="_dist/images/slider2.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0">
-                                <h1>Second slide label</h1> <!-- Updated the label for clarity -->
+                                <h1>Second slide label</h1> 
                                 <p>Some representative placeholder content for the second slide.</p>
                             </div>
                         </div>
@@ -89,7 +88,7 @@ include('header.php');
                     echo "</div>";
                 }
             } else {
-                echo '<p class="text-center">No items found.</p>'; // Updated with <p> tag for better presentation
+                echo '<p class="text-center">No items found.</p>';
             }
             mysqli_close($conn);
             ?>

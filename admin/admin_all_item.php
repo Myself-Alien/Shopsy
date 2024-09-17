@@ -1,7 +1,6 @@
 <?php
 include('../config/database.php');
 
-// Check if the database connection was successful
 if (!$conn) {
     die('Database connection failed: ' . mysqli_connect_error());
 }
@@ -83,9 +82,9 @@ if (!$conn) {
                         echo htmlspecialchars($row['item_cate'], ENT_QUOTES, 'UTF-8');
                         echo "</div>";
                         echo "</div>";
-                        echo "</div>"; // Close row g-0
-                        echo "</div>"; // Close card
-                        echo "</div>"; // Close row mt-3
+                        echo "</div>"; 
+                        echo "</div>"; 
+                        echo "</div>"; 
                     }
                 } else {
                     echo 'No items found.';

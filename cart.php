@@ -3,17 +3,16 @@ session_start();
 include('config/database.php');
 include('header.php');
 
-// Check if the product_id is provided
+
 if (isset($_GET['id'])) {
     $product_id = (int)$_GET['id'];
-    $quantity = 1; // Fixed quantity for simplicity
+    $quantity = 1; 
 
-    // Initialize the cart if not already done
+ 
     if (!isset($_SESSION['cart'])) {
         $_SESSION['cart'] = array();
     }
 
-    // Add or update the product in the cart
     if (isset($_SESSION['cart'][$product_id])) {
         $_SESSION['cart'][$product_id] += $quantity;
     } else {
