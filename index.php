@@ -63,8 +63,49 @@ include('header.php');
         </div>
     </div>
     <div class="container-fluid">
-        <div class="row">
-            
+        <div class="container pt-3 pb-4">
+            <h2 class="text-center pb-2">Our Products</h2>
+            <div class="row">
+            <div class="col-md-3">
+                <div class="card no_radius">
+                    <img src="_dist/uploads/img35.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-primary float-start">Add to Cart</a><a href="#" class="btn btn-primary float-end">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card no_radius">
+                    <img src="_dist/uploads/img35.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary float-start">Add to Cart</a><a href="#" class="btn btn-primary float-end">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card no_radius">
+                    <img src="_dist/uploads/img35.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary float-start">Add to Cart</a><a href="#" class="btn btn-primary float-end">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card no_radius">
+                    <img src="_dist/uploads/img35.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary float-start">Add to Cart</a><a href="#" class="btn btn-primary float-end">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            </div>
         </div>
     </div>
     <script>
