@@ -13,9 +13,9 @@
         <div class="container">
             <div class="d-flex">
                 <?php
-                if (isset($_SESSION['email'])) {
-                    // User is logged in, you can use the email value
-                    $email = $_SESSION['email'];
+                if (isset($_SESSION['fname'])) {
+                   
+                    $email = $_SESSION['fname'];
                     echo  "<div class='p-2 flex-grow-1'>" . ('Welcome, '  . $email) . "</div>";
                 }
                 ?>

@@ -3,6 +3,7 @@ session_start(); // Start the session
 
 if (isset($_SESSION['email'])) {
     $email = $_SESSION['email'];
+    
 } else {
     echo "<div class='container-fluid log_top_clr'>";
     echo "<div class='container'>";

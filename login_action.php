@@ -14,9 +14,10 @@ if (isset($_POST['submit'])) {
         $user = mysqli_fetch_assoc($result);
 
         // Compare plain text password
-        if ($pass === $user['pass']) { // 'password' should be replaced with the actual column name in your database
+        if ($pass === $user['pass']) { 
             session_start();
-            $_SESSION['email'] = $email; // Correctly assign the session variable
+            $_SESSION['email'] = $email;
+            $_SESSION['fname'] = $user['fname'];
             header("Location: index.php");
         } else {
             echo "Invalid password.";
