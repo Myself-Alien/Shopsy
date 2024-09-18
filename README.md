@@ -1,6 +1,6 @@
 # Shopy - Your Ultimate Shopping Experience
 
-Welcome to **Shopy**, a dynamic and user-friendly shopping platform designed to provide an exceptional online shopping experience. Built with PHP and MySQL, Shopy offers a seamless interface for users to browse, select, and purchase products with ease.
+Welcome to **Shopy**, a dynamic and user-friendly shopping platform designed to provide an exceptional online shopping experience. Built with PHP and MySQL, Shopy offers a seamless interface for users to browse, select, and purchase products with ease. 😀😀😀
 
 ## Features
 
