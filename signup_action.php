@@ -17,16 +17,21 @@ if (isset($_POST['submit'])) {
     $filename = basename($_FILES["user_image"]["name"]);
     $target_file = $target_dir . $filename;
 
-    $stmt = $conn->prepare("INSERT INTO `user_reg`(`fname`, `lname`, `email`, `pass`, `street`, `city`, `state`, `country` ,`zip`, `user_image`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    if (move_uploaded_file($_FILES["user_image"]["tmp_name"], $target_file)) {
+        chmod($target_file, 0755);
+        $stmt = $conn->prepare("INSERT INTO `user_reg`(`fname`, `lname`, `email`, `pass`, `street`, `city`, `state`, `country` ,`zip`, `user_image`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
-    $stmt->bind_param("ssssssssss", $fname, $lname, $email, $pass, $street, $city, $state, $country, $zip,$filename);
-
-    if ($stmt->execute()) {
-        echo "<script>
-            alert('Signup Successful!');
-            window.location.href='login.php';
-            </script>";
-    } else {
+        $stmt->bind_param("ssssssssss", $fname, $lname, $email, $pass, $street, $city, $state, $country, $zip,$filename);
+    
+        if ($stmt->execute()) {
+            echo "<script>
+                alert('Signup Successful!');
+                window.location.href='login.php';
+                </script>";
+        } 
+    }
+    else
+    {
         echo "Error: " . $stmt->error;
     }
 

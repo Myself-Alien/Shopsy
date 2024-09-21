@@ -27,7 +27,8 @@ if (isset($_POST['submit'])) {
         }
 
         $stmt->close();
-    } else {
+    } 
+    else {
         echo "Sorry, there was an error uploading your file.";
     }
 }
