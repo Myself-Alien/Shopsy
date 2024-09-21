@@ -24,7 +24,7 @@ include('header.php');
     <link href="_dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="_dist/js/bootstrap.bundle.min.js"></script> 
 </head>
-<body>
+<body class="login_page">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 no-pad">
@@ -36,16 +36,18 @@ include('header.php');
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="_dist/images/slider1.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0">
-                                <h1>First slide label</h1>
-                                <p>Some representative placeholder content for the first slide.</p>
+                            <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0 slider_caption black">
+                                <h1 class="black">Shop Latest Trends!</h1>
+                                <p class="black">Limited Time Offers - Grab Them Before They're Gone!</p>
+                                <button class="my_btn_dark p-2">Shop Now</button>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="_dist/images/slider2.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0">
-                                <h1>Second slide label</h1> 
-                                <p>Some representative placeholder content for the second slide.</p>
+                            <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0 slider_caption">
+                                <h1 class="black">New Arrivals Daily</h1> 
+                                <p class="black">Unbeatable Deals Just a Click Away – Don’t Miss Out!</p>
+                                <button class="my_btn_dark p-2">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -76,7 +78,7 @@ include('header.php');
                 while ($row = mysqli_fetch_assoc($result)) {
                    
                    echo "<div class='col-md-3 mb-4'>";
-                    echo "<div class='card no_radius'>";
+                    echo "<div class='card product_card no_radius'>";
                     echo "<img src='_dist/uploads/" . htmlspecialchars($row['item_img'], ENT_QUOTES, 'UTF-8') . "' alt='" .htmlspecialchars($row['item_name'], ENT_QUOTES, 'UTF-8') . "' class='card-img-top item_img' />";
                     echo "<div class='card-body'>";
                     echo "<h5 class='card-title'>" . htmlspecialchars($row['item_name'], ENT_QUOTES, 'UTF-8') . "</h5>";

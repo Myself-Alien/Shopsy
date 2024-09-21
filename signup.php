@@ -8,10 +8,10 @@
     <script src="_dist/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body class="login_page">
     <div class="container-fluid wrapp">
-        <div class="container pt-2 pb-2">
-            <div class="col-md-4 offset-md-4 admin_box">
+        <div class="container pb-1 mt-2">
+            <div class="col-md-4 offset-md-4 p-3 admin_box">
                 <h2 class="text-center">Sign Up</h2>
                 <form action="signup_action.php" method="post">
                     <div class="row mb-3">

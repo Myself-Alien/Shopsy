@@ -6,10 +6,10 @@
     <link href="../_dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="../_dist/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class="login_page">
     <div class="container-fluid wrapp">
         <div class="container mt-5 pt-5">
-            <div class="col-md-4 offset-md-4 admin_box">
+            <div class="col-md-4 offset-md-4 p-3 admin_box">
                 <h2 class="text-center">Admin Login</h2>
                 <form action="admin_action.php" method="post">
                     <div class="input-group mb-3">

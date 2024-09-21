@@ -14,20 +14,32 @@ include('header.php');
 <body class="login_page">
     <div class="container-fluid wrapp">
         <div class="container pt-5">
-            <div class="col-md-4 offset-md-4 admin_box">
-                <h2 class="text-center">Login</h2>
-                <form action="login_action.php" method="post">
-                    <div class="input-group mb-3">
-                        <input type="text" name="email" class="form-control no_radius" placeholder="Enter Email" required>
+            <div class="col-md-8 offset-md-2 admin_box">
+                <div class="row g-0">
+                    <div class="col-md-6 p-4">
+                        <h2 class="text-center black">Login</h2>
+                        <form action="login_action.php" method="post">
+                            <div class="input-group mb-3">
+                                <input type="text" name="email" class="form-control no_radius" placeholder="Enter Email" required>
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="password" name="pass" class="form-control no_radius" placeholder="Enter Password" required>
+                            </div>
+                            <input type="submit" name="submit" class="btn btn-primary no_radius my_btn_dark" value="Submit">
+                        </form>
                     </div>
-                    <div class="input-group mb-3">
-                        <input type="password" name="pass" class="form-control no_radius" placeholder="Enter Password" required>
+                    <div class="col-md-6 admin_box_extra">
+                       <div class="h-100 align-items-center justify-content-center admin_box_side">
+                        <div class="row">
+                            <div class="col-12 pb-1">A New Account?</div>
+                            <div class="col-12">
+                            <button type="button" class="my_btn_color signup_btn"><a href="signup.php">Sign Up</a></button>
+                            </div> 
+                        </div>
+                        
+                       </div>
                     </div>
-                    <input type="submit" name="submit" class="btn btn-primary no_radius my_btn_dark" value="Submit">
-                </form>
-            </div>
-            <div class="col-md-4 offset-md-4 text-center mt-3">
-                <button type="button" class="my_btn_color signup_btn"><a href="signup.php">Sign Up</a></button>
+                </div>
             </div>
         </div>
     </div>

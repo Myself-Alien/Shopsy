@@ -20,7 +20,7 @@
                 }
                 ?>
                 <div class="p-2">Privacy</div>
-                <div class="p-2">Media</div>
+                <div class="p-2">Legal</div>
                 <div class="p-2">Media</div>
                 <div class="p-2">Contact</div>
             </div>

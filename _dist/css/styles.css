@@ -1,29 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 body,
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Gelasio", serif;
   font-weight: 400;
   font-style: normal;
 }
 .admin_text h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Gelasio", serif;
   font-weight: 900;
   font-style: normal;
 }
 .admin_box {
-  background-color: #00adb5;
-  padding: 20px;
-  border: 2px solid #393e46;
+  background-color: #fff;
+
+  border: 2px solid #000;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Gelasio", serif;
 }
 .admin_box h2 {
-  color: #252a34;
-  font-family: "Roboto", sans-serif;
+  color: #000;
+  font-family: "Gelasio", serif;
 }
 .admin_box form {
   margin-block-end: 0em !important;
+}
+.admin_box_extra
+{
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-family: "Gelasio", serif;
 }
 .no_radius {
   border-radius: 0px !important;
@@ -36,19 +44,18 @@ html {
   text-decoration: none;
 }
 .my_btn_dark {
-  background-color: #252a34 !important;
-  border: 2px solid #252a34 !important;
-  font-family: "Roboto", sans-serif;
-  color: #00adb5 !important;
+  background-color: #000 !important;
+  border: none !important;
+  font-family: "Gelasio", serif;
+  color: #fff !important;
   font-size: 16px !important;
 }
 .my_btn_color {
-  background-color: #00adb5 !important;
-  border: 2px solid #252a34 !important;
+  background-color: #fff !important;
+  border: 2px solid #000 !important;
   color: #252a34 !important;
-  font-family: "Roboto", sans-serif;
-  font-size: 17px !important;
-  font-weight: bold;
+  font-family: "Gelasio", serif;
+  font-size: 16px !important;
   padding: 4px 10px;
 }
 .admin_top {
@@ -63,7 +70,7 @@ html {
   background-color: transparent;
   color: #00adb5;
   overflow-y: auto;
-  font-family: "Roboto", sans-serif;
+  font-family: "Gelasio", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -79,32 +86,32 @@ html {
   border-top: 1px solid #252a342e;
 }
 .add_item_sec {
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Gelasio", serif;
   font-style: normal;
 }
 .header_top {
   background-color: #000;
-  color: #00adb5;
-  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-family: "Gelasio", serif;
 }
 .copyright {
   background-color: #00adb5;
   padding: 15px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Gelasio", serif;
 }
 .logo {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: normal;
+  font-weight: bolder;
   text-transform: uppercase;
   font-size: 40px;
 }
 .logo > a {
   text-decoration: none;
   color: #000;
+  font-family: "Gelasio", serif;
+  font-weight: 900;
 }
 .menu_area {
-  font-family: "Roboto", sans-serif;
+  font-family: "Gelasio", serif;
   background-color: #fff;
 }
 .menu_area_menu {
@@ -118,9 +125,10 @@ html {
   text-decoration: none;
   color: #252a34;
   padding: 8px;
+  font-family: "Gelasio", serif;
 }
 .menu_area_menu li a:hover {
-  background-color: #00adb5;
+  background-color: #000;
   color: #fff;
 }
 .cap_center {
@@ -135,6 +143,7 @@ html {
 }
 .login_page {
   background-color: #f9f6ee;
+  font-family: "Gelasio", serif;
 }
 .log_top_msg {
   margin-left: 6px;
@@ -173,4 +182,23 @@ html {
 {
   transition: ease-in-out;
   animation-delay: 0.8s;
+}
+.admin_box_side
+{
+  align-content: center;
+  display:inline-flex;
+}
+.black
+{
+  color: #000;
+  font-family: "Gelasio", serif;
+}
+.slider_caption h1
+{
+  font-size: 5rem !important;
+  font-family: "Gelasio", serif;
+}
+.product_card
+{
+  font-family: "Gelasio", serif !important;
 }
