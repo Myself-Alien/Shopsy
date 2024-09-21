@@ -13,9 +13,13 @@ if (isset($_POST['submit'])) {
     $country = $_POST['country'];
     $zip = $_POST['zip'];
 
-    $stmt = $conn->prepare("INSERT INTO `user_reg`(`fname`, `lname`, `email`, `pass`, `street`, `city`, `state`, `country` ,`zip`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    $target_dir = "_dist/user_image/";
+    $filename = basename($_FILES["user_image"]["name"]);
+    $target_file = $target_dir . $filename;
 
-    $stmt->bind_param("sssssssss", $fname, $lname, $email, $pass, $street, $city, $state, $country, $zip);
+    $stmt = $conn->prepare("INSERT INTO `user_reg`(`fname`, `lname`, `email`, `pass`, `street`, `city`, `state`, `country` ,`zip`, `user_image`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+
+    $stmt->bind_param("ssssssssss", $fname, $lname, $email, $pass, $street, $city, $state, $country, $zip,$filename);
 
     if ($stmt->execute()) {
         echo "<script>
@@ -30,3 +34,4 @@ if (isset($_POST['submit'])) {
 }
 
 $conn->close();
+?>

@@ -54,7 +54,7 @@ include('../config/database.php');
                                 </select>
                             </div>
                             <div class="input-group mb-3">
-                                <input type="file" class="form-control" id="item_image" name="item_image" accept="image/*" required required>
+                                <input type="file" class="form-control" id="item_image" name="item_image" accept="image/*" required>
                             </div>
                             <div class="input-group mb-3">
                                 <input type="submit" class="btn btn-primary no_radius my_btn_dark" name="submit">

@@ -13,7 +13,7 @@
         <div class="container pb-1 mt-2">
             <div class="col-md-4 offset-md-4 p-3 admin_box">
                 <h2 class="text-center">Sign Up</h2>
-                <form action="signup_action.php" method="post">
+                <form action="signup_action.php" method="post" enctype="multipart/form-data">
                     <div class="row mb-3">
                         <div class="col">
                             <input type="text" name="fname" class="form-control no_radius" placeholder="First Name" required>
@@ -45,7 +45,7 @@
                         <input type="number" name="zip" class="form-control no_radius" placeholder="Zip" required>
                     </div>
                     <div class="input-group mb-3">
-                        <input class="form-control" type="file" id="formFile">
+                    <input type="file" class="form-control" id="user_image" name="user_image" accept="image/*" required>
                     </div>
                     <input type="submit" name="submit" class="btn btn-primary no_radius my_btn_dark" value="Submit">
                 </form>

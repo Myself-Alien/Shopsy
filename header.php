@@ -13,9 +13,9 @@
         <div class="container">
             <div class="d-flex">
                 <?php
-                if (isset($_SESSION['fname'])) {
+                if (isset($_SESSION['email'])) {
                    
-                    $email = $_SESSION['fname'];
+                    $email = $_SESSION['email'];
                     echo  "<div class='p-2 flex-grow-1'>" . ('Welcome, '  . $email) . "</div>";
                 }
                 ?>
