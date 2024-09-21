@@ -33,6 +33,8 @@ if (isset($_GET['id'])) {
     <script src="_dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+<?php 
+include('footer.php');
+?>
 </body>
 </html>

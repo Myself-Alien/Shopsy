@@ -13,7 +13,7 @@ include('header.php');
 <body class="login_page">
     <div class="container-fluid">
         <div class="container">
-            <div class="col-md-8 offset-md-2 text-center mt-5">
+            <div class="col-md-8 offset-md-2 text-center mt-5 mb-5">
                 <?php
 
                 $stmt = $conn->prepare("SELECT fname, lname, email, street, city, state, country, zip, user_image FROM user_reg WHERE email = ?");
@@ -28,10 +28,7 @@ include('header.php');
                 } else {
                     echo "No user found.";
                 }
-
                 $stmt->close();
-
-
                 $conn->close();
                 ?>
 
@@ -49,6 +46,9 @@ include('header.php');
             </div>
         </div>
     </div>
+    <?php 
+include('footer.php');
+?>
 </body>
 
 </html>

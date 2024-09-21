@@ -97,6 +97,9 @@ include('header.php');
         </div>
         </div>
     </div>
+    <?php 
+    include('footer.php');
+    ?>
     <script>
         const myCarouselElement = document.querySelector('#carouselExampleCaptions');
         const carousel = new bootstrap.Carousel(myCarouselElement, {
