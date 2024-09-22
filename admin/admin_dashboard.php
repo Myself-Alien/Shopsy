@@ -21,11 +21,18 @@
             <div class="col-md-2 admin_option">
                 <ul class="list-group pt-3">
                     <li class="list-group-item"><a href="admin_dashboard.php">Dashboard</a></li>
+                    <div class="text-success p-0">
+                        <hr>
+                    </div>
                     <li class="list-group-item"><a href="admin_add_item.php">Add Item</a></li>
+                    <div class="text-success">
+                        <hr>
+                    </div>
                     <li class="list-group-item"><a href="admin_all_item.php">All Iteam</a></li>
-                    <li class="list-group-item">Manage Users</li>
-                    <li class="list-group-item">A fourth item</li>
-                    <li class="list-group-item">And a fifth one</li>
+                    <div class="text-success">
+                        <hr>
+                    </div>
+                    <li class="list-group-item"><a href="#">Manage Users</a></li>
                 </ul>
             </div>
             <div class="col-md-10">
@@ -33,8 +40,8 @@
                     <h3>Dashboard</h3>
                     <div class="col-md-4 no_underline">
                         <a href="admin_all_item.php">
-                            <div class="card no_radius">
-                                <img src="../_dist/images/checklist.gif" class="card-img-top" alt="...">
+                            <div class="card no_radius ">
+                                <img src="../_dist/images/checklist.gif" class="card-img-top responsive_img" alt="...">
                                 <div class="card-body admin_block_border">
                                     <h3 class="card-title text-center">All Items</h3>
                                 </div>
@@ -44,7 +51,7 @@
                     <div class="col-md-4 no_underline">
                         <a href="admin_add_item.php">
                             <div class="card no_radius">
-                                <img src="../_dist/images/notebook.gif" class="card-img-top" alt="...">
+                                <img src="../_dist/images/notebook.gif" class="card-img-top responsive_img" alt="...">
                                 <div class="card-body admin_block_border">
                                     <h3 class="card-title text-center">Add Items</h3>
                                 </div>
@@ -54,7 +61,7 @@
                     <div class="col-md-4 no_underline">
                         <a href="">
                             <div class="card no_radius">
-                                <img src="../_dist/images/social-care.gif" class="card-img-top" alt="...">
+                                <img src="../_dist/images/social-care.gif" class="card-img-top responsive_img" alt="...">
                                 <div class="card-body admin_block_border">
                                     <h3 class="card-title text-center">Manage Users</h3>
                                 </div>
