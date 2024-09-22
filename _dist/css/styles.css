@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 body,
@@ -26,8 +26,7 @@ html {
 .admin_box form {
   margin-block-end: 0em !important;
 }
-.admin_box_extra
-{
+.admin_box_extra {
   background-color: #000;
   color: #fff;
   text-align: center;
@@ -74,9 +73,8 @@ html {
   font-style: normal;
   font-size: 18px;
 }
-.admin_option > ul > li a
-{
-  color: #00adb5; 
+.admin_option > ul > li a {
+  color: #00adb5;
   padding: 8px;
 }
 .admin_option > ul > li a:hover {
@@ -86,8 +84,7 @@ html {
 .admin_option {
   background-color: #000;
 }
-.admin_option a 
-{
+.admin_option a {
   text-decoration: none;
 }
 .admin_block_border {
@@ -163,60 +160,51 @@ html {
   background-color: #ff6347;
   color: #fff;
 }
-.blink
-{
+.blink {
   animation: blinker 1.9s linear infinite;
 }
 @keyframes blinker {
   50% {
-      opacity: 0;
+    opacity: 0;
   }
 }
-.item_img
-{
+.item_img {
   max-width: 35%;
   max-height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.Item_price
-{
+.Item_price {
   font-size: 18px;
   color: #ff6347;
   font-weight: 600;
   font-family: "Gelasio", serif;
 }
-.cart_btn
-{
+.cart_btn {
   background-color: #000 !important;
   border: none !important;
   outline: none !important;
   font-family: "Gelasio", serif;
 }
-.cart_btn:hover
-{
+.cart_btn:hover {
   background-color: #252a34;
   transition: ease-in-out;
   animation-delay: 0.8s;
 }
-.admin_box_side
-{
+.admin_box_side {
   align-content: center;
-  display:inline-flex;
+  display: inline-flex;
 }
-.black
-{
+.black {
   color: #000;
   font-family: "Gelasio", serif;
 }
-.slider_caption h1
-{
+.slider_caption h1 {
   font-size: 5rem !important;
   font-family: "Gelasio", serif;
 }
-.product_card
-{
+.product_card {
   font-family: "Gelasio", serif !important;
 }
 .footer {
@@ -236,13 +224,23 @@ html {
   color: white;
   font-size: 20px;
 }
-.responsive_img
-{
+.responsive_img {
   width: 100%; /* Make the image take the full width of its container */
   height: auto; /* Maintain the aspect ratio */
   max-height: 260px; /* Set a maximum height */
 }
-.product_title
-{
+.product_title {
   font-family: "Gelasio", serif !important;
+}
+.subscribe {
+  background-color: #fff !important;
+  border-radius: 0px !important;
+}
+.subscribe:hover
+{
+  color: #000 !important;
+}
+.subscribe_form
+{
+  border-radius: 0px !important;
 }

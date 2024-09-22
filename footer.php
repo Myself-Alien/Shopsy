@@ -9,7 +9,7 @@
 <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <h3>SHOPY</h3>
                     <p>Your go-to online destination for the latest electric gadgets, offering a wide range of innovative products to enhance your tech experience. Discover cutting-edge devices that combine functionality and style, all at competitive prices!</p>
                 </div>
@@ -23,11 +23,11 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <h5>Subscribe to our Newsletter</h5>
                     <form class="form-inline">
-                        <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Enter your email" required>
-                        <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                        <input type="email" class="form-control subscribe_form mb-2 mr-sm-2" placeholder="Enter your email" required>
+                        <button type="submit" class="btn subscribe mb-2">Subscribe</button>
                     </form>
                     <h5>Follow Us</h5>
                     <div class="social-icons">
