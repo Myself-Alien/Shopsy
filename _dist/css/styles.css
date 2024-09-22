@@ -84,7 +84,7 @@ html {
   color: #252a34;
 }
 .admin_option {
-  background-color: #252a34;
+  background-color: #000;
 }
 .admin_option a 
 {
@@ -174,8 +174,8 @@ html {
 }
 .item_img
 {
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 35%;
+  max-height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -185,9 +185,18 @@ html {
   font-size: 18px;
   color: #ff6347;
   font-weight: 600;
+  font-family: "Gelasio", serif;
+}
+.cart_btn
+{
+  background-color: #000 !important;
+  border: none !important;
+  outline: none !important;
+  font-family: "Gelasio", serif;
 }
 .cart_btn:hover
 {
+  background-color: #252a34;
   transition: ease-in-out;
   animation-delay: 0.8s;
 }
@@ -210,7 +219,6 @@ html {
 {
   font-family: "Gelasio", serif !important;
 }
-
 .footer {
   background-color: black;
   color: white;
@@ -233,4 +241,8 @@ html {
   width: 100%; /* Make the image take the full width of its container */
   height: auto; /* Maintain the aspect ratio */
   max-height: 260px; /* Set a maximum height */
+}
+.product_title
+{
+  font-family: "Gelasio", serif !important;
 }

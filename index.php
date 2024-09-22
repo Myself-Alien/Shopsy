@@ -78,13 +78,12 @@ include('header.php');
                 while ($row = mysqli_fetch_assoc($result)) {
                    
                    echo "<div class='col-md-3 mb-4'>";
-                    echo "<div class='card product_card no_radius'>";
-                    echo "<img src='_dist/uploads/" . htmlspecialchars($row['item_img'], ENT_QUOTES, 'UTF-8') . "' alt='" .htmlspecialchars($row['item_name'], ENT_QUOTES, 'UTF-8') . "' class='card-img-top item_img' />";
+                    echo "<div class='card h-100 pt-2 product_card no_radius'>";
+                    echo "<img src='_dist/uploads/" . htmlspecialchars($row['item_img'], ENT_QUOTES, 'UTF-8') . "' alt='" .htmlspecialchars($row['item_name'], ENT_QUOTES, 'UTF-8') . "' class='item_img' />";
                     echo "<div class='card-body'>";
-                    echo "<h5 class='card-title'>" . htmlspecialchars($row['item_name'], ENT_QUOTES, 'UTF-8') . "</h5>";
+                    echo "<h5 class='card-title product_title'>" . htmlspecialchars($row['item_name'], ENT_QUOTES, 'UTF-8') . "</h5>";
                     echo "<p class='card-text Item_price'>" ."<span>"."₹"."</span>". htmlspecialchars($row['item_price'], ENT_QUOTES, 'UTF-8') . "</p>";
                     echo "<a href='cart.php?id' class='btn btn-primary float-start no_radius w-100 cart_btn'><i class='bi bi-cart4'></i> Add to Cart</a>";
-                    //echo "<a href='#' class='btn btn-primary float-end'>Buy Now</a>";
                     echo "</div>";
                     echo "</div>";
                     echo "</div>";

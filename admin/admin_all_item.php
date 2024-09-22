@@ -27,19 +27,19 @@ if (!$conn) {
         <div class="row">
         <div class="col-md-2 admin_option">
                 <ul class="list-group pt-3">
-                    <li class="list-group-item"><a href="admin_dashboard.php">Dashboard</a></li>
+                    <li class="list-group-item"><a href="admin_dashboard.php"><i class="bi bi-speedometer"></i> Dashboard</a></li>
                     <div class="text-success p-0">
                         <hr>
                     </div>
-                    <li class="list-group-item"><a href="admin_add_item.php">Add Item</a></li>
+                    <li class="list-group-item"><a href="admin_add_item.php"><i class="bi bi-clipboard-data-fill"></i> Add Item</a></li>
                     <div class="text-success">
                         <hr>
                     </div>
-                    <li class="list-group-item"><a href="admin_all_item.php">All Iteam</a></li>
+                    <li class="list-group-item"><a href="admin_all_item.php"><i class="bi bi-card-checklist"></i> All Iteam</a></li>
                     <div class="text-success">
                         <hr>
                     </div>
-                    <li class="list-group-item"><a href="#">Manage Users</a></li>
+                    <li class="list-group-item"><a href="#"><i class="bi bi-person-badge-fill"></i> Manage Users</a></li>
                 </ul>
             </div>
             <div class="col-md-10">
