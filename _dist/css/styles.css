@@ -254,6 +254,12 @@ html {
   max-height: auto;
   display: block;
 }
+.cart_img
+{
+  max-width: 20% !important;
+  max-height: auto !important;
+  display: block !important;
+}
 .delete_btn a 
 {
   text-decoration: none;

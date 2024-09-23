@@ -12,7 +12,7 @@ include('header.php'); // Include your header
     <link href="_dist/css/styles.css" rel="stylesheet">
     <link href="_dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="login_page">
 <div class="container">
 <?php
     
@@ -42,7 +42,7 @@ include('header.php'); // Include your header
                 ];
             }
     
-            echo "<h1>Item added to cart!</h1>";
+            echo "<h4>Item added to cart!</h4>";
         } else {
             echo "Item not found!";
         }
@@ -53,32 +53,35 @@ include('header.php'); // Include your header
         $remove_id = intval($_GET['remove_id']);
         if (isset($_SESSION['cart'][$remove_id])) {
             unset($_SESSION['cart'][$remove_id]);
-            echo "<h1>Item removed from cart!</h1>";
+            echo "<h4>Item removed from cart!</h4>";
         } else {
-            echo "<h1>Item not found in cart!</h1>";
+            echo "<h4>Item not found in cart!</h4>";
         }
     }
     
     // Display the cart contents
     if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
-        echo "<h1>Your Cart</h1>";
+        //echo "<h1>Your Cart</h1>";
         echo "<ul class='list-group'>";
     
         foreach ($_SESSION['cart'] as $item_id => $item) {
             if (isset($item['item_name'], $item['item_price'], $item['item_img'], $item['quantity'])) {
-                echo "<li class='list-group-item'>";
-                echo "<div class='row'>";
-                echo "<div class='col-md-2'><img src='_dist/uploads/" . htmlspecialchars($item['item_img'], ENT_QUOTES, 'UTF-8') . "' alt='" . htmlspecialchars($item['item_name'], ENT_QUOTES, 'UTF-8') . "' class='img-fluid'></div>";
-                echo "<div class='col-md-8'>";
+                echo "<div class='row border border-success p-3'>";
+                echo "<div class='col-md-3'><img src='_dist/uploads/" . htmlspecialchars($item['item_img'], ENT_QUOTES, 'UTF-8') . "' alt='" . htmlspecialchars($item['item_name'], ENT_QUOTES, 'UTF-8') . "' class='img-fluid cart_img'></div>";
+                echo "<div class='col-md-3'>";
                 echo "<h5>" . htmlspecialchars($item['item_name'], ENT_QUOTES, 'UTF-8') . "</h5>";
+                echo "</div>";
+                echo "<div class='col-md-2'>";
                 echo "<p>Price: ₹" . htmlspecialchars($item['item_price'], ENT_QUOTES, 'UTF-8') . "</p>";
+                echo "</div>";
+                echo "<div class='col-md-2'>";
                 echo "<p>Quantity: " . htmlspecialchars($item['quantity'], ENT_QUOTES, 'UTF-8') . "</p>";
                 echo "</div>";
                 echo "<div class='col-md-2'>";
                 echo "<a href='?remove_id=" . htmlspecialchars($item_id, ENT_QUOTES, 'UTF-8') . "' class='btn btn-danger'>Remove</a>"; // Remove item link
                 echo "</div>";
                 echo "</div>";
-                echo "</li>";
+    
             }
         }
     
