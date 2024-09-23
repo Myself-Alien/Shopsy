@@ -91,7 +91,7 @@ if (!$conn) {
                         echo "</div>";
                         echo "<div class='col-md-2'>";
                         echo "<div class='card-body'>";
-                        echo "<button type='button' class='btn btn-danger delete_btn'><a href='admin_item_delete_action.php?id=" . htmlspecialchars($row['id'], ENT_QUOTES, 'UTF-8') . "'>Delete</a></button>  <button type='button' class='btn btn-info delete_btn'><a href='admin_item_edit.php?id=" . htmlspecialchars($row['id'], ENT_QUOTES, 'UTF-8') . "'>Edit</a></button>";
+                        echo "<button type='button' class='btn btn-danger delete_btn'><a href='admin_item_delete_action.php?id=" . htmlspecialchars($row['id'], ENT_QUOTES, 'UTF-8') . "'>Delete</a></button>  <button type='button' class='btn btn-info delete_btn'><a href='admin_item_edit.php?id=".$row['id']."'>Edit</a></button>";
                         echo "</div>";
                         echo "</div>";
                         echo "</div>";
