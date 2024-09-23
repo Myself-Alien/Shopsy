@@ -1,9 +1,12 @@
 <?php
 session_start(); 
 
+include('config/database.php'); // Include your database connection
+include('header.php'); // Include your header
+
+// Check if user is logged in
 if (isset($_SESSION['email'])) {
     $email = $_SESSION['email'];
-
 } else {
     echo "<div class='container-fluid log_top_clr'>";
     echo "<div class='container'>";
@@ -13,12 +16,12 @@ if (isset($_SESSION['email'])) {
     echo "</div>";
     echo "</div>";
 }
-include('config/database.php');
-include('header.php');
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopy || Online Shopping</title>
     <link href="_dist/css/styles.css" rel="stylesheet">
     <link href="_dist/css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +38,7 @@ include('header.php');
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="_dist/images/slider1.jpg" class="d-block w-100" alt="...">
+                            <img src="_dist/images/slider1.jpg" class="d-block w-100" alt="Slide 1">
                             <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0 slider_caption black">
                                 <h1 class="black">Shop Latest Trends!</h1>
                                 <p class="black">Limited Time Offers - Grab Them Before They're Gone!</p>
@@ -43,7 +46,7 @@ include('header.php');
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="_dist/images/slider2.jpg" class="d-block w-100" alt="...">
+                            <img src="_dist/images/slider2.jpg" class="d-block w-100" alt="Slide 2">
                             <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0 slider_caption">
                                 <h1 class="black">New Arrivals Daily</h1> 
                                 <p class="black">Unbeatable Deals Just a Click Away – Don’t Miss Out!</p>
@@ -63,6 +66,7 @@ include('header.php');
             </div>
         </div>
     </div>
+    
     <div class="container-fluid">
         <div class="container pt-3 pb-4">
             <h2 class="text-center pb-2">Our Products</h2>
@@ -74,16 +78,16 @@ include('header.php');
             if (!$result) {
                 die('Query failed: ' . mysqli_error($conn));
             }
+
             if (mysqli_num_rows($result) > 0) {
                 while ($row = mysqli_fetch_assoc($result)) {
-                   
-                   echo "<div class='col-md-3 mb-4'>";
+                    echo "<div class='col-md-3 mb-4'>";
                     echo "<div class='card h-100 pt-2 product_card no_radius'>";
-                    echo "<img src='_dist/uploads/" . htmlspecialchars($row['item_img'], ENT_QUOTES, 'UTF-8') . "' alt='" .htmlspecialchars($row['item_name'], ENT_QUOTES, 'UTF-8') . "' class='item_img' />";
+                    echo "<img src='_dist/uploads/" . htmlspecialchars($row['item_img'], ENT_QUOTES, 'UTF-8') . "' alt='" . htmlspecialchars($row['item_name'], ENT_QUOTES, 'UTF-8') . "' class='item_img' />";
                     echo "<div class='card-body'>";
                     echo "<h5 class='card-title product_title'>" . htmlspecialchars($row['item_name'], ENT_QUOTES, 'UTF-8') . "</h5>";
-                    echo "<p class='card-text Item_price'>" ."<span>"."₹"."</span>". htmlspecialchars($row['item_price'], ENT_QUOTES, 'UTF-8') . "</p>";
-                    echo "<a href='cart.php?id' class='btn btn-primary float-start no_radius w-100 cart_btn'><i class='bi bi-cart4'></i> Add to Cart</a>";
+                    echo "<p class='card-text Item_price'>" . "<span>" . "₹" . "</span>" . htmlspecialchars($row['item_price'], ENT_QUOTES, 'UTF-8') . "</p>";
+                    echo "<a href='cart.php?id=" . htmlspecialchars($row['id'], ENT_QUOTES, 'UTF-8') . "' class='btn btn-primary float-start no_radius w-100 cart_btn'><i class='bi bi-cart4'></i> Add to Cart</a>";
                     echo "</div>";
                     echo "</div>";
                     echo "</div>";
@@ -91,14 +95,17 @@ include('header.php');
             } else {
                 echo '<p class="text-center">No items found.</p>';
             }
-            mysqli_close($conn);
+
+            mysqli_close($conn); // Close the database connection
             ?>
         </div>
         </div>
     </div>
+
     <?php 
-    include('footer.php');
+    include('footer.php'); // Include your footer
     ?>
+
     <script>
         const myCarouselElement = document.querySelector('#carouselExampleCaptions');
         const carousel = new bootstrap.Carousel(myCarouselElement, {
