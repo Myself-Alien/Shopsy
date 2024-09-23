@@ -25,7 +25,7 @@ if (!$conn) {
             </nav>
         </div>
         <div class="row">
-        <div class="col-md-2 admin_option">
+            <div class="col-md-2 admin_option">
                 <ul class="list-group pt-3">
                     <li class="list-group-item"><a href="admin_dashboard.php"><i class="bi bi-speedometer"></i> Dashboard</a></li>
                     <div class="text-success p-0">
@@ -54,7 +54,7 @@ if (!$conn) {
 
                 if (mysqli_num_rows($result) > 0) {
                     while ($row = mysqli_fetch_assoc($result)) {
-                        echo "<div class='row mt-3'>";
+                        echo "<div class='row m-1'>";
                         echo "<div class='card mb-3'>";
                         echo "<div class='row g-0'>";
                         echo "<div class='col-md-1'>";
@@ -64,22 +64,22 @@ if (!$conn) {
                         echo "</div>";
 
                         echo "<div class='col-md-2'>";
-                        echo "<div class='card-body'>";
-                        echo "<img src='../_dist/uploads/" . htmlspecialchars($row['item_img'], ENT_QUOTES, 'UTF-8') . "' alt='" . htmlspecialchars($row['item_name'], ENT_QUOTES, 'UTF-8') . "' style='width: 100px; height: auto;'>";
+                        echo "<div class='card-body admin_all_img'>";
+                        echo "<img src='../_dist/uploads/" . htmlspecialchars($row['item_img'], ENT_QUOTES, 'UTF-8') . "' alt='" . htmlspecialchars($row['item_name'], ENT_QUOTES, 'UTF-8') . "' class='w-100'>";
                         echo "</div>";
                         echo "</div>";
 
-                        echo "<div class='col-md-2'>";
+                        echo "<div class='col-md-3'>";
                         echo "<div class='card-body'>";
                         echo htmlspecialchars($row['item_name'], ENT_QUOTES, 'UTF-8');
                         echo "</div>";
                         echo "</div>";
-                        echo "<div class='col-md-4'>";
-                        echo "<div class='card-body'>";
-                        echo htmlspecialchars($row['item_dec'], ENT_QUOTES, 'UTF-8');
-                        echo "</div>";
-                        echo "</div>";
-                        echo "<div class='col-md-1'>";
+                        //echo "<div class='col-md-4'>";
+                        //echo "<div class='card-body'>";
+                        //echo htmlspecialchars($row['item_dec'], ENT_QUOTES, 'UTF-8');
+                        //echo "</div>";
+                        //echo "</div>";
+                        echo "<div class='col-md-2'>";
                         echo "<div class='card-body'>";
                         echo htmlspecialchars($row['item_price'], ENT_QUOTES, 'UTF-8');
                         echo "</div>";
@@ -89,9 +89,14 @@ if (!$conn) {
                         echo htmlspecialchars($row['item_cate'], ENT_QUOTES, 'UTF-8');
                         echo "</div>";
                         echo "</div>";
-                        echo "</div>"; 
-                        echo "</div>"; 
-                        echo "</div>"; 
+                        echo "<div class='col-md-2'>";
+                        echo "<div class='card-body'>";
+                        echo "<button type='button' class='btn btn-danger delete_btn'><a href='admin_item_delete.php?id=" . htmlspecialchars($row['id'], ENT_QUOTES, 'UTF-8') . "'>Delete</a></button>";
+                        echo "</div>";
+                        echo "</div>";
+                        echo "</div>";
+                        echo "</div>";
+                        echo "</div>";
                     }
                 } else {
                     echo 'No items found.';

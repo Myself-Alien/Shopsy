@@ -248,3 +248,14 @@ html {
 {
   font-size: 18px;
 }
+.admin_all_img
+{
+  max-width: 45%;
+  max-height: auto;
+  display: block;
+}
+.delete_btn a 
+{
+  text-decoration: none;
+  color: #fff;
+}
