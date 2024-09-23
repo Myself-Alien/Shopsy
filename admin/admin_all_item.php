@@ -57,19 +57,19 @@ if (!$conn) {
                         echo "<div class='row m-1'>";
                         echo "<div class='card mb-3'>";
                         echo "<div class='row g-0'>";
-                        echo "<div class='col-md-1'>";
+                        echo "<div class='col-md-1 middle'>";
                         echo "<div class='card-body'>";
                         echo htmlspecialchars($row['id'], ENT_QUOTES, 'UTF-8');
                         echo "</div>";
                         echo "</div>";
 
-                        echo "<div class='col-md-2'>";
+                        echo "<div class='col-md-2 middle'>";
                         echo "<div class='card-body admin_all_img'>";
                         echo "<img src='../_dist/uploads/" . htmlspecialchars($row['item_img'], ENT_QUOTES, 'UTF-8') . "' alt='" . htmlspecialchars($row['item_name'], ENT_QUOTES, 'UTF-8') . "' class='w-100'>";
                         echo "</div>";
                         echo "</div>";
 
-                        echo "<div class='col-md-3'>";
+                        echo "<div class='col-md-3 middle'>";
                         echo "<div class='card-body'>";
                         echo htmlspecialchars($row['item_name'], ENT_QUOTES, 'UTF-8');
                         echo "</div>";
@@ -79,19 +79,19 @@ if (!$conn) {
                         //echo htmlspecialchars($row['item_dec'], ENT_QUOTES, 'UTF-8');
                         //echo "</div>";
                         //echo "</div>";
-                        echo "<div class='col-md-2'>";
+                        echo "<div class='col-md-2 middle'>";
                         echo "<div class='card-body'>";
                         echo htmlspecialchars($row['item_price'], ENT_QUOTES, 'UTF-8');
                         echo "</div>";
                         echo "</div>";
-                        echo "<div class='col-md-2'>";
+                        echo "<div class='col-md-2 middle'>";
                         echo "<div class='card-body'>";
                         echo htmlspecialchars($row['item_cate'], ENT_QUOTES, 'UTF-8');
                         echo "</div>";
                         echo "</div>";
-                        echo "<div class='col-md-2'>";
+                        echo "<div class='col-md-2 middle'>";
                         echo "<div class='card-body'>";
-                        echo "<button type='button' class='btn btn-danger delete_btn'><a href='admin_item_delete_action.php?id=" . htmlspecialchars($row['id'], ENT_QUOTES, 'UTF-8') . "'>Delete</a></button>  <button type='button' class='btn btn-info delete_btn'><a href='admin_item_edit.php?id=".$row['id']."'>Edit</a></button>";
+                        echo "<button type='button' class='btn btn-info no_radius no_underline color_white'><a href='admin_item_edit.php?id=".$row['id']."'>Edit</a></button> <button type='button' class='btn btn-danger my_btn_red no_radius'><a href='admin_item_delete_action.php?id=" . htmlspecialchars($row['id'], ENT_QUOTES, 'UTF-8') . "'>Delete</a></button>  ";
                         echo "</div>";
                         echo "</div>";
                         echo "</div>";

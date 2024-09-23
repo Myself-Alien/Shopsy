@@ -13,7 +13,7 @@ include('header.php'); // Include your header
     <link href="_dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="login_page">
-<div class="container">
+<div class="container pt-1 pb-4">
 <?php
     
     // Check if 'id' is set in the URL for adding to cart
@@ -42,7 +42,7 @@ include('header.php'); // Include your header
                 ];
             }
     
-            echo "<h4>Item added to cart!</h4>";
+            echo "<h6 class='mt-3'>Items Added to Cart!</h6>";
         } else {
             echo "Item not found!";
         }
@@ -53,9 +53,9 @@ include('header.php'); // Include your header
         $remove_id = intval($_GET['remove_id']);
         if (isset($_SESSION['cart'][$remove_id])) {
             unset($_SESSION['cart'][$remove_id]);
-            echo "<h4>Item removed from cart!</h4>";
+            echo "<h6>Item removed from cart!</h6>";
         } else {
-            echo "<h4>Item not found in cart!</h4>";
+            echo "<h6>Item not found in cart!</h6>";
         }
     }
     
@@ -66,19 +66,19 @@ include('header.php'); // Include your header
     
         foreach ($_SESSION['cart'] as $item_id => $item) {
             if (isset($item['item_name'], $item['item_price'], $item['item_img'], $item['quantity'])) {
-                echo "<div class='row border border-success p-3'>";
+                echo "<div class='row border border-dark-subtle p-3 mb-3'>";
                 echo "<div class='col-md-3'><img src='_dist/uploads/" . htmlspecialchars($item['item_img'], ENT_QUOTES, 'UTF-8') . "' alt='" . htmlspecialchars($item['item_name'], ENT_QUOTES, 'UTF-8') . "' class='img-fluid cart_img'></div>";
-                echo "<div class='col-md-3'>";
+                echo "<div class='col-md-3 middle'>";
                 echo "<h5>" . htmlspecialchars($item['item_name'], ENT_QUOTES, 'UTF-8') . "</h5>";
                 echo "</div>";
-                echo "<div class='col-md-2'>";
-                echo "<p>Price: ₹" . htmlspecialchars($item['item_price'], ENT_QUOTES, 'UTF-8') . "</p>";
-                echo "</div>";
-                echo "<div class='col-md-2'>";
+                echo "<div class='col-md-2 middle'>";
                 echo "<p>Quantity: " . htmlspecialchars($item['quantity'], ENT_QUOTES, 'UTF-8') . "</p>";
                 echo "</div>";
-                echo "<div class='col-md-2'>";
-                echo "<a href='?remove_id=" . htmlspecialchars($item_id, ENT_QUOTES, 'UTF-8') . "' class='btn btn-danger'>Remove</a>"; // Remove item link
+                echo "<div class='col-md-2 middle'>";
+                echo "<p>Price: ₹" . htmlspecialchars($item['item_price'], ENT_QUOTES, 'UTF-8') . "</p>";
+                echo "</div>";
+                echo "<div class='col-md-2 middle'>";
+                echo "<a href='?remove_id=" . htmlspecialchars($item_id, ENT_QUOTES, 'UTF-8') . "' class='btn btn-danger my_btn_red no_radius'>Remove</a>"; // Remove item link
                 echo "</div>";
                 echo "</div>";
     
@@ -86,10 +86,10 @@ include('header.php'); // Include your header
         }
     
         echo "</ul>";
-        echo "<a href='index.php' class='btn btn-primary mt-3'>Continue Shopping</a>";
+        echo "<a href='index.php' class='btn btn-primary mt-3 my_btn_dark no_radius'><i class='bi bi-arrow-left'></i>  Continue Shopping</a>";
     } else {
         echo "<h1>Your cart is empty.</h1>";
-        echo "<a href='index.php' class='btn btn-primary'>Start Shopping</a>";
+        echo "<a href='index.php' class='btn btn-primary mt-3 my_btn_dark no_radius'>Start Shopping</a>";
     }
     
     

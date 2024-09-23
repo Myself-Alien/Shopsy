@@ -49,6 +49,22 @@ html {
   color: #fff !important;
   font-size: 16px !important;
 }
+.my_btn_red {
+  background-color: #D22B2B !important;
+  border: none !important;
+  font-family: "Gelasio", serif;
+  color: #fff !important;
+  font-size: 16px !important;
+}
+.my_btn_red a 
+{
+  text-decoration: none;
+  color: #fff;
+}
+.color_white a 
+{
+  color: #fff;
+}
 .my_btn_color {
   background-color: #fff !important;
   border: 2px solid #000 !important;
@@ -264,4 +280,10 @@ html {
 {
   text-decoration: none;
   color: #fff;
+}
+.middle
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
