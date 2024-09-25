@@ -24,6 +24,7 @@ if (isset($_SESSION['email'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopy || Online Shopping</title>
     <link href="_dist/css/styles.css" rel="stylesheet">
+    <link href="_dist/css/animate.min.css" rel="stylesheet">
     <link href="_dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="_dist/js/bootstrap.bundle.min.js"></script> 
 </head>
@@ -40,17 +41,17 @@ if (isset($_SESSION['email'])) {
                         <div class="carousel-item active">
                             <img src="_dist/images/slider1.jpg" class="d-block w-100" alt="Slide 1">
                             <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0 slider_caption black">
-                                <h1 class="black">Shop Latest Trends!</h1>
-                                <p class="black">Limited Time Offers - Grab Them Before They're Gone!</p>
-                                <button class="my_btn_dark p-2">Shop Now</button>
+                                <h1 class="black animate__animated animate__bounceInUp">Shop Latest Trends!</h1>
+                                <p class="black animate__animated animate__bounceInDown animate__delay-1s">Limited Time Offers - Grab Them Before They're Gone!</p>
+                                <button class="my_btn_dark p-2 animate__animated animate__rubberBand animate__delay-2s">Shop Now</button>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="_dist/images/slider2.jpg" class="d-block w-100" alt="Slide 2">
-                            <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0 slider_caption">
-                                <h1 class="black">New Arrivals Daily</h1> 
-                                <p class="black">Unbeatable Deals Just a Click Away – Don’t Miss Out!</p>
-                                <button class="my_btn_dark p-2">Shop Now</button>
+                            <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0 slider_caption black">
+                                <h1 class="black animate__animated animate__bounceInUp">New Arrivals Daily</h1>
+                                <p class="black animate__animated animate__bounceInDown animate__delay-1s">Unbeatable Deals Just a Click Away – Don’t Miss Out!</p>
+                                <button class="my_btn_dark p-2 animate__animated animate__rubberBand animate__delay-2s">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -109,7 +110,7 @@ if (isset($_SESSION['email'])) {
     <script>
         const myCarouselElement = document.querySelector('#carouselExampleCaptions');
         const carousel = new bootstrap.Carousel(myCarouselElement, {
-            interval: 4000,
+            interval: 6000,
             touch: false
         });
     </script>
