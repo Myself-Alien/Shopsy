@@ -111,7 +111,8 @@ if (isset($_SESSION['email'])) {
         const myCarouselElement = document.querySelector('#carouselExampleCaptions');
         const carousel = new bootstrap.Carousel(myCarouselElement, {
             interval: 6000,
-            touch: false
+            touch: false,
+            wrap: true
         });
     </script>
 </body>
